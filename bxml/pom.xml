@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.luc.etl</groupId>
+  <artifactId>better-xml-java</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>better-xml-java</name>
+  <url>http://maven.apache.org</url>
+  
+  <scm> 
+    <connection>scm:svn:http://betterxml.googlecode.com/svn/trunk/better-xml-refactored/better-xml/</connection> 
+    <developerConnection>scm:svn:https://betterxml.googlecode.com/svn/trunk/better-xml-refactored/better-xml/</developerConnection> 
+  </scm> 
+
+<properties>
+  <maven.test.failure.ignore>true</maven.test.failure.ignore>
+</properties>
+
+
+  <!-- Deploy to Matt Bone's home directory on Xenon for now: -->
+  <distributionManagement> 
+    <repository> 
+      <id>betterxml-repository</id> 
+      <name>Better XML Repository</name> 
+      <url>scp://xenon.cs.luc.edu/homes/users/cs/students/2005/mbone/public_html/maven_repository</url> 
+    </repository> 
+  </distributionManagement> 
+  
+  <build>
+  	<plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.3.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.jmock</groupId>
+      <artifactId>jmock</artifactId>
+      <version>2.2.0-RC1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.jmock</groupId>
+      <artifactId>jmock-junit4</artifactId>
+      <version>2.2.0-RC1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

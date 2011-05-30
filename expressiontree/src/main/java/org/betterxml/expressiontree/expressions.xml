@@ -1,0 +1,11 @@
+<group>
+  <!--Should evaluate to 42-->
+  <add>
+  	<value value="21"/>
+  	<value value="20"/>
+  	<subtract>
+  		<value value="5"/>
+  		<value value="4"/>
+  	</subtract>
+  </add>
+</group>

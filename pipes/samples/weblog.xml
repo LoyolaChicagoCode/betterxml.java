@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/">
+  <id>tag:blogger.com,1999:blog-35974004</id>
+  <updated>2008-01-23T20:18:59.394-08:00</updated>
+  <title type="text">thatmattbone.com -- blog</title>
+  <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/"/>
+  <link rel="http://schemas.google.com/g/2005#feed" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default"/>
+  <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default"/>
+  <author>
+    <name>Matt Bone</name>
+  </author>
+  <!--<generator version="7.00" uri="http://www.blogger.com">Blogger</generator>
+  <openSearch:totalResults>25</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>25</openSearch:itemsPerPage>-->
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-2199350117021772725</id>
+    <published>2008-01-23T14:07:00.001-08:00</published>
+    <updated>2008-01-23T20:18:59.428-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="etl.luc.edu"/>
+    <title type="text">pipe test</title>
+    <content type="html">We've created an &lt;a href="http://pipes.yahoo.com/pipes/pipe.info?_id=iBYnef_J3BGBZMBOYEsBXw"&gt;ETL Yahoo pipe&lt;/a&gt; that aggregates the content of members' blogs tagged with 'etl.luc.edu'.  What I'm wondering is how quickly the pipe gets updated, and where things get cached along the line...</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2008/01/pipe-test.html" title="pipe test"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=2199350117021772725" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/2199350117021772725/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/2199350117021772725"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/2199350117021772725"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-9184194554949371164</id>
+    <published>2007-12-15T22:21:00.000-08:00</published>
+    <updated>2007-12-15T22:36:31.302-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="haskell"/>
+    <title type="text">const id 1 2</title>
+    <content type="html">While playing around with the &lt;a href="http://haskell.org/haskellwiki/99_questions/"&gt;99 problems in Haskell&lt;/a&gt;, I came across this function &lt;span style="font-family: courier new;"&gt;const&lt;/span&gt; that takes two arguments and returns the first without ever evaluating the second.  For example:&lt;br /&gt;&lt;br /&gt;&lt;span style="font-family: courier new;"&gt;const 1 2&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;returns &lt;span style="font-family: courier new;"&gt;1&lt;/span&gt;. Now that is straightforward enough, but then I noticed that:&lt;br /&gt;&lt;br /&gt;&lt;span style="font-family: courier new;"&gt;const id 1 2&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;returns &lt;span style="font-family: courier new;"&gt;2&lt;/span&gt;, and, indeed &lt;span style="font-family: courier new;"&gt;const id x y&lt;/span&gt; always returns&lt;span style="font-family: courier new;"&gt; y&lt;/span&gt;.  I was confused.  &lt;span style="font-family: courier new;"&gt;id&lt;/span&gt; is the identity function and quite simply returns its argument untouched.  After some searching and thinking,  I realized how this works.  If we consider the example above, it turns out that &lt;span style="font-family: courier new;"&gt;const id 1&lt;/span&gt; discards the &lt;span style="font-family: courier new;"&gt;1&lt;/span&gt; and returns the &lt;span style="font-family: courier new;"&gt;id&lt;/span&gt; function.  This function(&lt;span style="font-family: courier new;"&gt;id&lt;/span&gt;) is then evaluated with the remaining argument, &lt;span style="font-family: courier new;"&gt;2&lt;/span&gt;, and, presto, we get &lt;span style="font-family: courier new;"&gt;2&lt;/span&gt; as the answer.  Tricky, but not exactly readable.  A more human friendly form is probably:&lt;br /&gt;&lt;br /&gt;&lt;span style="font-family: courier new;"&gt;flip const 1 2&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;A simple description of the &lt;a href="http://www.zvon.org/other/haskell/Outputprelude/flip_f.html"&gt;flip function&lt;/a&gt; is here.  Hooray for first class functions and lazy evaluation!</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/12/const-id-1-2.html" title="const id 1 2"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=9184194554949371164" title="2 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/9184194554949371164/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/9184194554949371164"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/9184194554949371164"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-1670168832387165509</id>
+    <published>2007-09-05T09:29:00.000-07:00</published>
+    <updated>2007-09-09T16:05:24.770-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">s-expression/xml isomorphism</title>
+    <content type="html">After some discussions with &lt;a href="http://www.etl.luc.edu/gkt"&gt;Dr. George&lt;/a&gt; recently, I was interested in exploring the relationship between xml and s-expressions.  This has certainly been done before, but I thought I would try my hand at it.  In the end result, I'm able to convert an s-expression such as:&lt;br /&gt;&lt;pre&gt;&lt;br /&gt;(a :a1 "test" :a2 "test2" "mycdata" (b :a3 "c"))&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;to xml:&lt;br /&gt;&lt;pre&gt;&lt;br /&gt;&amp;lt;a a1="test" a2="test2"&amp;gt;&lt;br /&gt;mycdata&lt;br /&gt;&amp;lt;b a3="c"&amp;gt;&lt;br /&gt;&amp;lt;/b&amp;gt;&lt;br /&gt;&amp;lt;/a&amp;gt;&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;I do so with a somewhat strange but more explicit intermediate format:&lt;br /&gt;&lt;pre&gt;&lt;br /&gt;(:element-name "a" :attributes (("a1" . "test") ("a2" . "test2")) :cdata nil&lt;br /&gt;                   :children (:element-name "b" :attributes (("a3" . "c")) &lt;br /&gt;                               :cdata "My CDATA" :children nil))&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;This shows pretty clearly how a single namespace xml document can be represented with an s-expression.  What I'm wondering now is if I can go from the intermediate representation to something like YAML or JSON.  George and I have been calling these 'tree languages'; I wonder if some sort of overarching equivalence for these 'tree languages' can be shown?  &lt;br /&gt;&lt;br /&gt;I don't think this has much practical use, but the code &lt;a href="http://betterxml.googlecode.com/svn/trunk/better-xml-refactored/sexp_to_xml/"&gt;is here&lt;/a&gt;.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/09/s-expressionxml-isomorphism.html" title="s-expression/xml isomorphism"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=1670168832387165509" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/1670168832387165509/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/1670168832387165509"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/1670168832387165509"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-2210552063482101883</id>
+    <published>2007-09-05T09:24:00.001-07:00</published>
+    <updated>2008-01-02T08:02:58.280-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="neighbor's roof"/>
+    <title type="text">items on my neighbor's roof 2</title>
+    <content type="html">&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp0.blogger.com/_neCry2Kl16o/Rt7YaDw4rpI/AAAAAAAAA5Q/JGG4MvFGZyQ/s1600-h/DSC01358.JPG"&gt;&lt;img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://bp0.blogger.com/_neCry2Kl16o/Rt7YaDw4rpI/AAAAAAAAA5Q/JGG4MvFGZyQ/s320/DSC01358.JPG" alt="" id="BLOGGER_PHOTO_ID_5106756969683267218" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;From Aug 24th:&lt;br /&gt;&lt;br /&gt;The chair, lid and shelf have been removed.  This was most likely caused by high winds.&lt;br /&gt;&lt;br /&gt;I also have unconfirmed reports of &lt;span style="font-style: italic;"&gt;children(!)&lt;/span&gt; on the roof.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/09/items-on-my-neighbors-roof-2.html" title="items on my neighbor's roof 2"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=2210552063482101883" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/2210552063482101883/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/2210552063482101883"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/2210552063482101883"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-3773597419634474592</id>
+    <published>2007-08-19T08:42:00.000-07:00</published>
+    <updated>2007-08-19T08:47:12.600-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="neighbor's roof"/>
+    <title type="text">items on my neighbor's roof 1</title>
+    <content type="html">&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp0.blogger.com/_neCry2Kl16o/Rshl-jw4qUI/AAAAAAAAAt4/Dnrexp9_IpY/s1600-h/DSC01357.JPG"&gt;&lt;img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://bp0.blogger.com/_neCry2Kl16o/Rshl-jw4qUI/AAAAAAAAAt4/Dnrexp9_IpY/s320/DSC01357.JPG" alt="" id="BLOGGER_PHOTO_ID_5100438703423662402" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;For the past several months I've noticed a bewildering and frequent changing collection of objects on the roof of my neighbor's garage.  I will now catalog these.&lt;br /&gt;&lt;br /&gt;Inventory:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Trash can lid&lt;/li&gt;&lt;li&gt;Plastic shelf&lt;/li&gt;&lt;li&gt;Chair&lt;/li&gt;&lt;li&gt;Mop&lt;/li&gt;&lt;li&gt;Tire/wheel/pole&lt;/li&gt;&lt;li&gt;Bucket&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;Changes:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Chair has been positioned upright so as to allow one to sit.&lt;/li&gt;&lt;/ul&gt;</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/08/items-on-my-neighbors-roof-1.html" title="items on my neighbor's roof 1"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=3773597419634474592" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/3773597419634474592/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/3773597419634474592"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/3773597419634474592"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-12946875820010138</id>
+    <published>2007-08-14T04:48:00.000-07:00</published>
+    <updated>2007-08-14T05:00:45.547-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">darcs is perfect for university</title>
+    <content type="html">(I'm guessing that a lot of what I say here applies to all distributed version control systems, but since I've only used darcs, that is what I'll focus on.)&lt;br /&gt;&lt;br /&gt;One of the neatest things about &lt;a href="http://darcs.net"&gt;darcs&lt;/a&gt; is the fact that every checked out copy is itself a repository.  This is perfect for university courses!  Students can check out the professor's code, make their own changes to the code (i.e. if the code is the starting point for some assignment...quite common), and commit their changes to their own repository without 'disconnecting' it from the professor's version.  All the student needs to do is pull changes from the professors server periodically and deal with any conflicts that may arise.  The student can even push their copy to a university server for backup.  It's perfect!&lt;br /&gt;&lt;br /&gt;If only Google code had darcs support, then I could force &lt;a href="http://code.google.com/p/luc-cs271"&gt;my 271 students&lt;/a&gt; to do this.  As it stands, I'm not so sure a data structures course is the ideal place to introduce version control, but I may end up doing this anyway.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/08/darcs-is-perfect-for-university.html" title="darcs is perfect for university"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=12946875820010138" title="2 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/12946875820010138/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/12946875820010138"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/12946875820010138"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-6447312656281422497</id>
+    <published>2007-08-04T10:54:00.000-07:00</published>
+    <updated>2007-08-04T11:02:53.162-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">GNU &amp; Lisp</title>
+    <content type="html">I'm reading the GNU manifesto, and Stallman talks about adding:&lt;br /&gt;&lt;br /&gt;&lt;blockquote&gt;"We plan to have...perhaps eventually a Lisp-based window system through which several Lisp programs and ordinary Unix programs can share a screen.  Both C and Lisp will be available as system programming languages." --&lt;a href="http://www.gnu.org/gnu/manifesto.html"&gt;RMS&lt;/a&gt;&lt;/blockquote&gt;&lt;a href="http://www.gnu.org/gnu/manifesto.html"&gt;&lt;/a&gt;&lt;br /&gt;What happened?  Where did the Lisp programmers go?</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/08/gnu-lisp.html" title="GNU &amp; Lisp"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=6447312656281422497" title="1 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/6447312656281422497/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/6447312656281422497"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/6447312656281422497"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-3804864079296301792</id>
+    <published>2007-07-31T04:55:00.001-07:00</published>
+    <updated>2007-07-31T05:04:39.223-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">meeting Richard Stallman</title>
+    <content type="html">&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_neCry2Kl16o/Rq8kDC-1MwI/AAAAAAAAAtE/Xx_lgkVPjfM/s1600-h/DSC01349.jpg"&gt;&lt;img style="float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;" src="http://bp2.blogger.com/_neCry2Kl16o/Rq8kDC-1MwI/AAAAAAAAAtE/Xx_lgkVPjfM/s320/DSC01349.jpg" border="0" alt="" id="BLOGGER_PHOTO_ID_5093329338337932034" /&gt;&lt;/a&gt;&lt;br /&gt;I had the chance to meet Richard Stallman on Friday.  He was speaking at the &lt;a href="http://na-cap.osi.luc.edu/"&gt;NA-CAP&lt;/a&gt; conference at which I volunteered.  All in all, very interesting, and last night I ended up joining the FSF. &lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Call Stallman what you will: ideological, dogmatic, unwavering, stubborn, whatever.  You have to give it to him that he is completely and totally dedicated to his cause.  I think this is admirable.&lt;/div&gt;</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/07/meeting-richard-stallman.html" title="meeting Richard Stallman"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=3804864079296301792" title="1 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/3804864079296301792/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/3804864079296301792"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/3804864079296301792"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-9096726313942885255</id>
+    <published>2007-07-17T19:15:00.001-07:00</published>
+    <updated>2007-07-17T19:34:54.643-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="politics"/>
+    <title type="text">history!</title>
+    <content type="html">If you're awake and you have cable, turn on C-SPAN2 and watch the historic all-night Senate session about Iraq.  It really is quite interesting to see the Senators talking on their own without mass media spin.  Unfortunately these things are usually only on during the day (though you can catch the last hour if you get home early enough).&lt;br /&gt;&lt;br /&gt;&lt;span style="font-weight:bold;"&gt;Update:&lt;/span&gt;&lt;br /&gt;At this time Fox News is talking about a WWE wrestler, CNN is rambling about the Brumfield shooting, MSNBC is showing a prison special, CNBC is showing Donny Deutsch and how you can GET RICH, and the same for Bloomberg.  If this frivolity is not enough, MTV, the shiny things network, is celebrating our national stupidity with 'Scarred,' a show with "user-generated videos of mishaps and wipeouts."&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Long live the republic.&lt;/div&gt;</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/07/history.html" title="history!"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=9096726313942885255" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/9096726313942885255/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/9096726313942885255"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/9096726313942885255"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-5328620841609896560</id>
+    <published>2007-07-16T21:42:00.000-07:00</published>
+    <updated>2007-07-17T19:21:06.119-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">your word documents are ugly and useless</title>
+    <content type="html">It seems I've been in a LaTeX-chatter-whirlwind this past week: someone emailed me about TeX today, I discovered &lt;a href="http://www.math.union.edu/locate/jsMath"&gt;jsmath&lt;/a&gt;, &lt;a href="http://nitens.org/taraborelli/latex"&gt;this article&lt;/a&gt; was on reddit a few days back, and my boss and I were chatting about TeX on Friday.  Since I haven't actually been writing anything lately, I have no need for TeX at the moment, so I'll just rant.&lt;br /&gt;&lt;br /&gt;MS-Word is useless.  When writing in word, you're forced to think about 'look and feel,' but when it's all done, your document will still look like crap (see &lt;a href="http://nitens.org/taraborelli/latex"&gt;the aforementioned article&lt;/a&gt; for something of intellectual merit on this).  Take some time, learn how to use LaTeX (or something as simple as &lt;a href="http://www.lyx.org/"&gt;LyX&lt;/a&gt; or &lt;a href="http://www.texmacs.org/"&gt;TeXmacs&lt;/a&gt;), and thank yourself later.  You'll write better when you aren't constantly fretting over the appearance of your document, and it'll look better when typeset by the brainy TeX algorithms.&lt;br /&gt;&lt;br /&gt;Also, if you must collaborate on a document, use a wiki or Google docs, and then paste your nearly complete product into your TeX editor.  &lt;span style="font-weight: bold;"&gt;Emailing a word doc to your colleagues or posting to a website is not collaboration.&lt;/span&gt;  No one is going to read it, and if they do, they aren't going to comment.  It is too painful.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/07/your-word-documents-are-ugly-and.html" title="your word documents are ugly and useless"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=5328620841609896560" title="5 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/5328620841609896560/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/5328620841609896560"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/5328620841609896560"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-2531642750647643606</id>
+    <published>2007-06-18T04:38:00.000-07:00</published>
+    <updated>2007-06-18T06:14:16.870-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">smalltalk browser too much at first</title>
+    <content type="html">&lt;blockquote&gt;It’s called bottom up programming, the foundation of which is small composeable methods.&lt;/blockquote&gt;&lt;br /&gt;&lt;div style="text-align: right;"&gt;--&lt;a href="http://onsmalltalk.com/programming/smalltalk/on-the-smalltalk-browser/"&gt;Ramon Leon&lt;/a&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style="text-align: left;"&gt; &lt;/div&gt;&lt;div style="text-align: left;"&gt;&lt;br /&gt;This is of course the most important lesson to take from Lisp and its Lispy friend Smalltalk, and in &lt;a href="http://onsmalltalk.com/programming/smalltalk/on-the-smalltalk-browser/"&gt;this recent posting&lt;/a&gt;, Ramon Leon discusses the relationship between the Smalltalk code/method browsers and bottom up programming.  I have no doubt, as Leon suggests, that this type of code browsing IDE encourages and perhaps even demands bottom up programming.  However, just as I've wondered about this same topic with regards to Lisp and slime, I still maintain that bottom up programming has less to do with the tools than the language itself.  Though I'll assume this to be true and the discussion of why this is the case is beyond me and would take many reams of paper, I'll state without proof that bottom up programming only emerges from languages with super consistent syntax and semantics. &lt;br /&gt;&lt;br /&gt;Now on to the "0piniated" nature of the Smalltalk browser.  Leon, I think, shows how the browser really does facilitate better code, but I do not think that this type of environment is a precondition for bottom up programming.  On the contrary, the Smalltalk code browser is best appreciated and used after one understands the benefits of bottom up programming.  So I think that presenting new users accustomed to more 'traditional' IDEs with the Smalltalk browser is a mistake.  Instead, provide them with a very simple text editor (something slightly more sophisticated than the workbench), while encouraging them to check out the class browser at a later date.  If we were writing a tutorial, maybe we'd do a simple example in the text editor first, and rework this example in the later chapter on the code browser.  Ultimately, they'll  appreciate the code-reading-browsing IDE and bottom up programming all the more, and this may reduce some of the initial 'what the hell is this?' experience when starting in with Squeak.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/06/smalltalk-browser-too-much-at-first.html" title="smalltalk browser too much at first"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=2531642750647643606" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/2531642750647643606/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/2531642750647643606"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/2531642750647643606"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-3353719281137782834</id>
+    <published>2007-06-04T18:38:00.000-07:00</published>
+    <updated>2007-06-04T18:43:52.482-07:00</updated>
+    <title type="text">/^Ruby regex/</title>
+    <content type="html">So it turns out that &lt;a href="http://www.rubycentral.com/articles/re_obj.html"&gt;regular expressions in Ruby&lt;/a&gt; are totally sweet.  They're a nice language feature just like in Perl...except, not Perl.  I was under the mistaken impression that the Ruby crowd was perhaps a bit too minimalist and academic to do something like this (not that I have a problem with either of those traits).  Way to go Matz!</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/06/ruby-regex.html" title="/^Ruby regex/"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=3353719281137782834" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/3353719281137782834/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/3353719281137782834"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/3353719281137782834"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-6370368753923223105</id>
+    <published>2007-05-31T05:11:00.000-07:00</published>
+    <updated>2007-06-03T15:35:46.249-07:00</updated>
+    <title type="text">why webapps?</title>
+    <content type="html">So things like &lt;a href="http://code.google.com/apis/gears/"&gt;Gears&lt;/a&gt;, &lt;a href="http://silverlight.net/"&gt;Silverlight&lt;/a&gt;, and &lt;a href="http://labs.adobe.com/wiki/index.php/Apollo"&gt;Apollo&lt;/a&gt; look like they're here to simplify the development of rich internet application. We'll be able to run our rich web apps on and off line.  But aren't we still talking about HTTP, the hyper _text_ transfer protocol? Ultimately, the web we experience through a browser was created to serve up text.  So why are we trying to shoehorn in full blown applications?&lt;br /&gt;&lt;br /&gt;For all their javascript headaches, browsers are still fairly standard.  They are the write-once-run-anywhere dream.  Everyone has a browser, and everyone can run your webapp.  So at first glance it seems natural that these webapps evolve and become more and more complex.  But remember HTTP and consequently the browser weren't written to run applications.  The ultra rich web application just doesn't quite make sense.  Why waste all the time re-implementing mostly solved problems with inadequate tools?  We shouldn't be editing movies through a browser; it's just silly.&lt;br /&gt;&lt;br /&gt;Ultimately we're in this position because we've failed to create rich client side applications that can be easily distributed and updated.  I think that Java's webstart was a nod in the right direction but very poorly executed.  Also, the appeal of web applications goes beyond the distribution; we also want to get at our stuff no matter where we are.  Can we build rich apps that live on and store their data on something like &lt;a href="http://aws.amazon.com/s3"&gt;S3&lt;/a&gt;?  &lt;br /&gt;&lt;br /&gt;I want my documents and apps, but I don't want them through a browser.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/05/why-webapps.html" title="why webapps?"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=6370368753923223105" title="1 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/6370368753923223105/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/6370368753923223105"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/6370368753923223105"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-7044489555925415078</id>
+    <published>2007-04-24T22:27:00.000-07:00</published>
+    <updated>2007-04-25T09:01:58.827-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">(finally) working with Lisp</title>
+    <content type="html">Several months ago I assigned my data structures students a little recursive puzzle as part of a &lt;a href="http://thatmattbone.com/Comp271/Hw4"&gt;somewhat longterm assignment&lt;/a&gt;.  The assignment is due soon, and I thought I'd take some time to write up a solution in Lisp for my own enjoyment.&lt;br /&gt;&lt;br /&gt;Now, I've been putzing around with Lisp for some time, but this is really the largest thing I've written outside of the &lt;a href="http://www.gigamonkeys.com/book/"&gt;Practical Common Lisp&lt;/a&gt; examples.  To be fair, at 56 lines it's not  'large' by any stretch of the imagination. Still, it's been fun, and I've noticed some things.&lt;br /&gt;&lt;br /&gt;Programming in SLIME is a pure joy.  I find myself writing very short functions and testing them at the REPL repeatedly; Lisp really does facilitate bottom-up programming.  Originally I thought this approach was more of a convention, but it turns out to be an emergent property of the language and programming environment.  Functions without side-effects are quite easy to test, and SLIME lets you recompile and test at will.  Though I think the mutable-state-objects so prevalent in Python really keep us from leveraging the power of the Python REPL, it might be worthwhile to encourage a Lispy-bottom-up approach in Python, too.  Maybe some additional tools and a bit more dedication to this style are needed (it's not the same emergent property as seen in Lisp itself), but the benefits would be worth it.  Syntax and macros aside, the ability to tinker with the code I'm writing while I'm writing it is a huge win.  Lisp makes this much simpler.&lt;br /&gt;&lt;br /&gt;I'm going to think about this some more...I believe the ease of the REPL has pedagogical implications, too (I mean, where's the Java REPL?).</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/finally-working-with-lisp.html" title="(finally) working with Lisp"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=7044489555925415078" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/7044489555925415078/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/7044489555925415078"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/7044489555925415078"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-6295229141385063883</id>
+    <published>2007-04-18T08:31:00.000-07:00</published>
+    <updated>2007-04-25T09:07:21.880-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">my problem with presentation software (with solution)</title>
+    <content type="html">Presentation software is linear; presentations are non-linear. Most of my 'presentations' are in the academic setting where I either lecture or give an overview of a project I'm working on. In either case, it is useful to evaluate the attention and interest of the audience and alter the presentation on the fly.  This may be as simple as spending more time on one particular idea, but it may also require referring back to previous diagrams that capture the spirit of the presentation in a high level view.  Traditional presentation software does away with this give and take, and instead forces an ordering of slides (ideas) on presenters and 'presentees'.  Sure we can go back to previous slides, but this is tedious as the software does not take this into consideration.&lt;br /&gt;&lt;br /&gt;I think one solution comes from wiki software. Imagine a presentation as a set of wiki pages (small, maybe 10-12 pages).  The pages would not only contain normal slide material (maybe we shouldn't use bullet points, but that's for another day), but also links to other slides.  The perfect presentation software would parse these wiki pages, presenting each as a slide in a graphical cluster ala &lt;a href="http://www.apple.com/macosx/features/expose/"&gt;Exposé&lt;/a&gt;. Links would be represented as simple lines drawn between the slides, and some nice graph theory would place the important slides (those with more in/out links) closer to the center of the screen.  Selecting a slide from this global view would bring it into the traditional full screen mode, and as the wiki and therefore the slides are completely flat, there would be no meaning to 'next'.  Instead, presenters would navigate by selecting a link on the slide or returning to the global view with a key stroke and selecting a slide from there. The global view would remind us of what we've seen and let the presenter return to previous ideas as needed.&lt;br /&gt;&lt;br /&gt;I should mention that there are many others with thoughts on PowerPoint. After &lt;a href="http://seagrubs.blogspot.com/"&gt;&lt;s&gt;Chris Grubbs&lt;/s&gt;&lt;/a&gt; &lt;a href="http://ephemeraleuphoria.com/"&gt;Michael Greene&lt;/a&gt; mentioned the work of &lt;a href="http://www.edwardtufte.com/"&gt;Edward Tufte&lt;/a&gt;, I spent more time thinking about this issue. Tufte's article, &lt;a href="http://www.wired.com/wired/archive/11.09/ppt2.html"&gt;'PowerPoint Is Evil'&lt;/a&gt; serves as a nice starting point, and I think that we could gain a lot by spending more time considering how to display information.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/my-problem-with-presentation-software.html" title="my problem with presentation software (with solution)"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=6295229141385063883" title="1 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/6295229141385063883/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/6295229141385063883"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/6295229141385063883"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-1260659021663371844</id>
+    <published>2007-04-11T09:39:00.000-07:00</published>
+    <updated>2007-04-11T09:42:14.550-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="random"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="weather"/>
+    <title type="text">snow day</title>
+    <content type="html">&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_neCry2Kl16o/Rh0P3ao-0NI/AAAAAAAAARU/xQFDs7NPhtQ/s1600-h/snow.jpg"&gt;&lt;img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://bp2.blogger.com/_neCry2Kl16o/Rh0P3ao-0NI/AAAAAAAAARU/xQFDs7NPhtQ/s320/snow.jpg" alt="" id="BLOGGER_PHOTO_ID_5052211801697997010" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;Today's my birthday, and I think this is the first time it has ever snowed on my birthday (where I was, at least).</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/snow-day.html" title="snow day"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=1260659021663371844" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/1260659021663371844/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/1260659021663371844"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/1260659021663371844"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-79244140814203783</id>
+    <published>2007-04-07T17:50:00.000-07:00</published>
+    <updated>2007-04-07T18:24:56.030-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="random"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="music"/>
+    <title type="text">Simple Gifts</title>
+    <content type="html">I finally download the "Simple Gifts" theme from Copland's &lt;span style="font-style: italic;"&gt;Appalachian Spring&lt;/span&gt; ballet today.  Based on a shaker tune which was transformed into the "Lord of the Dance" hymn all us Catholic schoolchildren sang, it may be a bit on the hokey side. Nevertheless, it is one of my favorite pieces of music.&lt;br /&gt;&lt;br /&gt;We hear the simple but compelling theme over and over: quiet woodwinds, beautiful long-bowing strings, the quick, stacatto brass section, and then that final quiet woodwind (flute?) bit.  The orchestra feels as if it's winding down, yet we know something is coming; we can feel the tension.  And then, bam, the trumpet starts back up, coming in gently so as not to startle but with grandiose power not yet heard in the work. It feels like an eternity until that timpani hit one note later, but with that, the whole orchestra enters.  They play with such brilliance and majesty.  It's as if we've been waiting for this for the entire piece, but they do not rush and instead each note comes through with feeling and restraint.&lt;br /&gt;&lt;br /&gt;I would to love see Appalachian Spring performed someday.  Until then, we can all enjoy this &lt;a href="http://www.ac-nancy-metz.fr/cinemav/pubusa/us.mpeg"&gt;1996 Oldsmobile Aurora commercial&lt;/a&gt;; the cheese here is unsurpassed, and yet the whole thing (even without the towers) feels nostalgically pre-9/11.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/simple-gifts.html" title="Simple Gifts"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=79244140814203783" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/79244140814203783/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/79244140814203783"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/79244140814203783"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-2761094630770211990</id>
+    <published>2007-04-05T07:24:00.000-07:00</published>
+    <updated>2007-04-05T08:32:33.639-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">concurrency crisis</title>
+    <content type="html">It often seems that whatever we see in Apple's products today, we'll see in PCs tomorrow.  So with the introduction of the 8 core Mac pro, we're already getting into some serious multi-core territory.  And while it's been harped on frequently, everyone is right; with many more cores we'll need much more concurrency.&lt;br /&gt;&lt;br /&gt;More and more, I'm coming to the conclusion that shared state multi-threading, at the very least, is an improper abstraction, and at the worst, is barely an abstraction at all.  &lt;a href="http://weblog.raganwald.com/2007/04/haskell-not-just-for-language-weenies.html"&gt;An interesting piece&lt;/a&gt; over at Raganwald today talks about dealing with mutable collections in these environments, drawing inspiration from functional languages such as Haskell. The posting talks about using a ingenious copy-on-write approach to speed up reads across multiple threads (I wonder, is this &lt;a href="http://en.wikipedia.org/wiki/Software_transactional_memory"&gt;STM&lt;/a&gt;?).  And while this technique is a leaps and bounds ahead of locking the entire data structure on each and every read and write, I wonder if we're still not approaching this from the proper perspective.&lt;br /&gt;&lt;br /&gt;Lately I've been interested in the &lt;a href="http://c2.com/cgi/wiki?ActorsModel"&gt;Actors model&lt;/a&gt; as an alternative to this shared state business.  Though I've much more to learn, it seems that the spirit of the actors model is interacting processes (lightweight threads really) that communicate via message passing.  The actors react to incoming messages and change state, fire off new messages, etc.  The important thing, however, is that shared-state is gone (shared-nothing).  When done properly, the actor only explicitly calls code that is entirely within its scope (thread local, if you will) and uses messages to carry out all of its other work.   Though this shared-nothing model is used in Erlang without objects, with some discipline it's not necessary to throw out OOP.&lt;br /&gt;&lt;br /&gt;While the terminology seems to have faded, in Smalltalk you don't 'invoke methods' but rather 'send messages'.  We can use this idea when thinking about actors in a more familiar Java-esque object oriented setting.  Consider an actor-object: an object with it's own thread that responds to incoming messages.  An actor-object can still hold references to local objects and 'invoke methods' on them, but these references should be totally encapsulated and never leaked to other actor-objects (a stronger form of composition for the UML inclined). That is, the actor-object though it likely could, shares nothing with other actor-objects in the system by way of object references. One actor-object wishing to collaborate with with another must use the 'message sending' concept.  Notice that all concurrency issues are abstracted away.  The actor-object has only one thread that is woken up when messages arrive, and this is the only thread that ever executes the actor's code.&lt;br /&gt;&lt;br /&gt;Much of this can be implemented today on the JVM using &lt;a href="http://scala-lang.org"&gt;Scala&lt;/a&gt;, it's actors library, and some discipline. However, we must ultimately decide whether or not this approach is any simpler (or more productive) than standard shared-state/locking approach.  Eventually we may throw out the OOP model altogether (referential transparency and concurrency anyone?), but until then we should remember that OOP, while no cure-all-snake-oil, has a lot of warm brains and bodies behind it. We should, at the very least,   strive to simplify concurrency in this nearly ubiquitous approach.  We need out of the multi-core-concurrency-crisis.&lt;br /&gt;&lt;br /&gt;As an aside,  I've been dealing with these problems (and using Scala) in my work on &lt;a href="http://code.google.com/p/neighborhood"&gt;CN&lt;/a&gt;.  I hope to post more of my thoughts as I continue to tackle the concurrency beast.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/concurrency-crisis.html" title="concurrency crisis"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=2761094630770211990" title="6 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/2761094630770211990/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/2761094630770211990"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/2761094630770211990"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-4758192123266126846</id>
+    <published>2007-04-04T08:45:00.000-07:00</published>
+    <updated>2007-04-04T08:49:14.485-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="bikes"/>
+    <title type="text">bam!</title>
+    <content type="html">&lt;a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp1.blogger.com/_neCry2Kl16o/RhPIsciTYCI/AAAAAAAAARM/ppx1eZ9I4x0/s1600-h/bike_rim.jpg"&gt;&lt;img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://bp1.blogger.com/_neCry2Kl16o/RhPIsciTYCI/AAAAAAAAARM/ppx1eZ9I4x0/s320/bike_rim.jpg" alt="" id="BLOGGER_PHOTO_ID_5049600273112326178" border="0" /&gt;&lt;/a&gt;&lt;br /&gt;This past friday I had a bit of an incident when the front rim on my bike came apart rather violently. Everything was fine (i.e. crash free), though it was a startling experience.  The rapid decompression of a tire pumped to about 100psi is...dramatic.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/bam.html" title="bam!"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=4758192123266126846" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/4758192123266126846/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/4758192123266126846"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/4758192123266126846"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-3905926217141936255</id>
+    <published>2007-04-03T00:24:00.000-07:00</published>
+    <updated>2007-04-03T00:28:24.990-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">HOP project</title>
+    <content type="html">&lt;a href="http://hop.inria.fr"&gt;The HOP project&lt;/a&gt; is simply amazing.  It's a programming language for building 'web 2.0' apps, and it just so happens be very lispy.  Go, run the demo.  I was shocked at what could be done with stupid ajax tricks.  The demo &lt;span style="font-style: italic;"&gt;feels&lt;/span&gt; like a flash app, but it isn't. &lt;br /&gt;&lt;br /&gt;Hooray for s-expressions!</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/04/hop-project.html" title="HOP project"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=3905926217141936255" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/3905926217141936255/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/3905926217141936255"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/3905926217141936255"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-1754431164055182261</id>
+    <published>2007-03-03T17:25:00.000-08:00</published>
+    <updated>2007-04-07T18:25:20.825-07:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="random"/>
+    <category scheme="http://www.blogger.com/atom/ns#" term="music"/>
+    <title type="text">the popcorn song</title>
+    <content type="html">In kindergarten we'd sometimes have to stay inside for recess because of the weather.  When this happened the teacher would occasionally play the 'popcorn song' and make us dance.  It was a great song.  I heard it today on NPR, and a quick googling brought up: &lt;a href="http://www.popcorn-song.com/"&gt;http://www.popcorn-song.com/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Apparently you could just build a complete library of popcorn songs.  Brilliant.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/03/popcorn-song.html" title="the popcorn song"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=1754431164055182261" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/1754431164055182261/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/1754431164055182261"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/1754431164055182261"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-8121664730555683588</id>
+    <published>2007-02-05T11:54:00.000-08:00</published>
+    <updated>2007-02-05T12:10:05.801-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="politics"/>
+    <title type="text">$50 and your vote</title>
+    <content type="html">Slate has a &lt;a href="http://www.salon.com/opinion/feature/2007/02/05/campaign_finance/index.html"&gt;compelling piece on campaign finance reform&lt;/a&gt;.  They discuss the Ackerman-Ayres proposal, which would allocate $50 to registered voters.  The voters could spend the money on candidates of their choosing.  Even more interesting, is that donations from private individuals to campaigns would still be allowed, but the contributions would be funneled through the FEC to disguise their origins.&lt;br /&gt;&lt;br /&gt;It certainly is an interesting idea.  However, there are many glitches, though most are technical.  How, for instance, would third party candidates become registered to receive money?  It is already quite difficult to get third parties on ballots, and this system could potentially make third parties even less relevant.  If implemented properly, the system could do the exact opposite, but that is one big if.  Also, the 'secret algorithms' used by the FEC to disguise the origins of money could be a huge point of contention.  We already have enough voter confidence problems with the electronic black boxes tallying our votes, how much confidence would we have in black box donations?&lt;br /&gt;&lt;br /&gt;No doubt this plan would wildly change politics, and something does indeed need to change. We're in desperate need of well thought out policy.  Reactionary politics gets us no where.  Yet, as the article points out the dramatic changes are exactly the reason why this plan would never come to fruition; incumbents have too much to lose.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/02/50-and-your-vote.html" title="$50 and your vote"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=8121664730555683588" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/8121664730555683588/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/8121664730555683588"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/8121664730555683588"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-224188207691543823</id>
+    <published>2007-02-04T09:40:00.000-08:00</published>
+    <updated>2007-02-04T09:41:26.471-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="weather"/>
+    <title type="text">cold. so, so cold.</title>
+    <content type="html">The high temperature today is zero.  Zero is nothing.  It is so cold, that the high temperature has been canceled.  There will be no high today.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/02/cold-so-so-cold.html" title="cold. so, so cold."/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=224188207691543823" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/224188207691543823/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/224188207691543823"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/224188207691543823"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-6374041940539728651</id>
+    <published>2007-02-02T17:34:00.000-08:00</published>
+    <updated>2007-02-02T17:42:59.593-08:00</updated>
+    <category scheme="http://www.blogger.com/atom/ns#" term="software"/>
+    <title type="text">Java Schools?</title>
+    <content type="html">As a graduate student who has done most of my programming in object oriented languages such as python and java, I sometimes fear that while I am well versed in the theory of good design, am I not missing something?&lt;br /&gt;&lt;br /&gt;In particular, it seems that functional programming is an interesting and invaluable component of computer science that should be included in any degree program.  However, my programs have not offered such a course.  Fear not.  Thar interweb comes to the rescue. &lt;br /&gt;&lt;br /&gt;For those who have a secret Lisp fascination, &lt;a href="http://www.gigamonkeys.com/book/"&gt;Practical Common Lisp&lt;/a&gt; is available online, for free.  Want a bit more theory?  The infamous &lt;a href="http://mitpress.mit.edu/sicp/full-text/book/book.html"&gt;Structure and Interpretation of Computer Programs&lt;/a&gt; (SICP) from MIT is also available online; morever, videos of SICP lectures are available &lt;a href="http://swiss.csail.mit.edu/classes/6.001/abelson-sussman-lectures/"&gt;here&lt;/a&gt; and &lt;a href="http://www.archive.org/details/mit_ocw_sicp"&gt;here&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;So, maybe you go to a &lt;a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html"&gt;Java School&lt;/a&gt;, but this doesn't mean you should limit yourself.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2007/02/java-schools.html" title="Java Schools?"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=6374041940539728651" title="1 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/6374041940539728651/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/6374041940539728651"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/6374041940539728651"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-35974004.post-116075734677766447</id>
+    <published>2006-10-13T09:35:00.000-07:00</published>
+    <updated>2007-02-01T22:52:09.374-08:00</updated>
+    <title type="text">Hello World!</title>
+    <content type="html">Though I someday hope for adequate wiki/blog integration, after much deliberation, I've decided to maintain both.  So, have fun reading my blog, and don't forget to visit &lt;a href="http://thatmattbone.com"&gt;the wiki&lt;/a&gt;.</content>
+    <link rel="alternate" type="text/html" href="http://weblog.thatmattbone.com/2006/10/hello-world.html" title="Hello World!"/>
+    <link rel="replies" type="text/html" href="http://www.blogger.com/comment.g?blogID=35974004&amp;postID=116075734677766447" title="0 Comments"/>
+    <link rel="replies" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/116075734677766447/comments/default" title="Post Comments"/>
+    <link rel="self" type="application/atom+xml" href="http://weblog.thatmattbone.com/feeds/posts/default/116075734677766447"/>
+    <link rel="edit" type="application/atom+xml" href="http://www.blogger.com/feeds/35974004/posts/default/116075734677766447"/>
+    <author>
+      <name>Matt Bone</name>
+    </author>
+  </entry>
+</feed>

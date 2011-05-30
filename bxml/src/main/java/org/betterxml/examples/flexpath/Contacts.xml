@@ -1,0 +1,200 @@
+<phonebook>
+	<!--All names and their associated data was the work of creativity. Any actual validity in
+	    the data is accidental and not intended-->
+	
+	<!--TEMPLATE--
+	<contact>
+		<name>
+			<first></first>
+			<middle></middle>
+			<last></last>
+		</name>
+		<phone type='home'>
+			<areacode></areacode>
+			<number></number>
+		</phone>
+		<phone type='work'>
+			<areacode></areacode>
+			<number></number>
+		</phone>
+		<phone type='mobile'>
+			<areacode></areacode>
+			<number></number>
+		</phone>
+		<address>
+			<streetline></streetline>
+			<streetline></streetline>
+			<city></city>
+			<state></state>
+			<zip></zip>
+		</address>
+	</contact>
+	-->
+
+	<contact>
+		<name>
+			<first>John</first>
+			<middle>P.</middle>
+			<last>Rogers</last>
+		</name>
+		<phone type='home'>
+			<areacode>773</areacode>
+			<number>4562135</number>
+		</phone>
+		<phone type='work'>
+			<areacode>312</areacode>
+			<number>5559872</number>
+		</phone>
+		<phone type='mobile'>
+			<areacode>773</areacode>
+			<number>8738846</number>
+		</phone>
+		<address>
+			<streetline>C/O His Work, LTD</streetline>
+			<streetline>5546 N. Munster Ave.</streetline>
+			<city>Chicago</city>
+			<state>IL</state>
+			<zip>60613</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Vera</first>
+			<last>Malcoty</last>
+		</name>
+		<phone type='mobile'>
+			<areacode>847</areacode>
+			<number>6361212</number>
+		</phone>
+		<address>
+			<streetline>864 W. Pillbottom Street #2</streetline>
+			<city>Winnetka</city>
+			<state>IL</state>
+			<zip>60093</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Gerald</first>
+			<middle>Raymond</middle>
+			<last>Opienhammer</last>
+		</name>
+		<phone type='home'>
+			<areacode>212</areacode>
+			<number>9458465</number>
+		</phone>
+		<phone type='mobile'>
+			<areacode>212</areacode>
+			<number>3246564</number>
+		</phone>
+		<address>
+			<streetline>7 E. Carolina Street</streetline>
+			<city>Plummed</city>
+			<state>NJ</state>
+			<zip>84003</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Penton</first>
+			<last>Hastings</last>
+		</name>
+		<phone type='home'>
+			<areacode>502</areacode>
+			<number>9468821</number>
+		</phone>
+		<address>
+			<streetline>654 Addison Pkwy</streetline>
+			<city>Louisville</city>
+			<state>KY</state>
+			<zip>40204</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Sarah</first>
+			<middle>0.</middle>
+			<last>Smith</last>
+		</name>
+		<phone type='home'>
+			<areacode>612</areacode>
+			<number>9443179</number>
+		</phone>
+		<phone type='work'>
+			<areacode>612</areacode>
+			<number>5553168</number>
+		</phone>
+		<phone type='mobile'>
+			<areacode>612</areacode>
+			<number>6465546</number>
+		</phone>
+		<address>
+			<streetline>8848 W. Henderson Street</streetline>
+			<streetline>Second Floor</streetline>
+			<city>Barrelton</city>
+			<state>Iowa</state>
+			<zip>84084</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Carrol</first>
+			<last>Feinman</last>
+		</name>
+		<phone type='home'>
+			<areacode>502</areacode>
+			<number>4518151</number>
+		</phone>
+		<address>
+			<streetline>21 Parkway Terrace</streetline>
+			<city>Louisville</city>
+			<state>KY</state>
+			<zip>40207</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Tib</first>
+			<last>Lightman</last>
+		</name>
+		<phone type='home'>
+			<areacode>773</areacode>
+			<number>2136483</number>
+		</phone>
+		<phone type='mobile'>
+			<areacode>312</areacode>
+			<number>5331515</number>
+		</phone>
+		<address>
+			<streetline>2313 W. Hatterson Str.</streetline>
+			<city>Chicago</city>
+			<state>IL</state>
+			<zip>60657</zip>
+		</address>
+	</contact>
+
+	<contact>
+		<name>
+			<first>Bill</first>
+			<middle>C</middle>
+			<last>Hickerson</last>
+		</name>
+		<phone type='home'>
+			<areacode>874</areacode>
+			<number>6664545</number>
+		</phone>
+		<address>
+			<streetline>2424 S. 5th Ave</streetline>
+			<city>Nawlton</city>
+			<state>GA</state>
+			<zip>31256</zip>
+		</address>
+	</contact>
+
+<phonebook>

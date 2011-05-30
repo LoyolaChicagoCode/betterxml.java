@@ -1,0 +1,40 @@
+<TodoList>
+
+	<Item complete='false'>
+		Clean room.
+	</Item
+	
+	<Item complete='false'>
+		Create valid XML Sample files for parsing and manipulating to prove that 
+		code works and is helpful.
+	</Item>
+
+	<Item complete='true'>
+		Wash the dishes.
+	</Item>
+	
+	<Item complete='true'>
+		Pay Electric Bill.
+	</Item>
+	
+	<Item complete='false'>
+		Pay gas bill
+	</Item>
+	
+	<Item complete='false'>
+		Go to the grocery.
+	</Item>
+	
+	<Item complete='false'>
+		Call back Denis.
+	</Item>
+	
+	<Item complete='true'>
+		Go through email backlog. 
+	</Item>
+	
+	<Item complete='false'>
+		 Get the car washed.
+	</Item>
+	
+</TodoList>

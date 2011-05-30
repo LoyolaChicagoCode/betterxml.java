@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NBody SYSTEM "nbody.dtd">
+<NBody>
+  <Parameters>
+     <Parameter name="iterations" value="1000"/>
+     <Parameter name="time-limit" value="3:00"/>
+  </Parameters>
+  <InitialConditions>
+     <Particle id="mercury" mass="10" unit="g" 
+               x="10" y="100" z="25" velocity="100"/>
+     <Particle id="venus" mass="10" unit="g" 
+               x="10" y="100" z="25" velocity="100"/>
+     <Particle id="earth" mass="100" unit="g"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="mars" mass="100" unit="g"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="jupiter" mass="100" unit="kg"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="saturn" mass="10" unit="kg"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="uranus" mass="100" unit="kg"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="neptune" mass="100" unit="g"
+               x="100" y="200" z="30" velocity="20"/>
+     <Particle id="pluto" mass="100" unit="g"
+               x="100" y="200" z="30" velocity="20"/>
+  </InitialConditions>
+</NBody>

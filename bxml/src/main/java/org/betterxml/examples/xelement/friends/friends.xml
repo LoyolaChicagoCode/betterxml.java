@@ -1,0 +1,11 @@
+<Friends>
+
+	<Friend id='nabicht' phone='773-555-3163' email='nabicht@nabicht.com'/>
+	
+	<Friend id='GKT' phone='123-456-5432' email='gtk@university.edu'/>
+	
+	<Friend id='W' email='pres@usa.gov' />
+	
+	<Friend id='another' phone='312-555-6677'/>
+
+</Friends>

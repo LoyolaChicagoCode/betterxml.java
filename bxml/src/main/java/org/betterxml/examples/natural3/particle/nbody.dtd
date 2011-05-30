@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!ELEMENT NBody (Parameters, InitialConditions)>
+<!ELEMENT Parameters (Parameter*)>
+<!ELEMENT Parameter EMPTY>
+<!ELEMENT Particle EMPTY>
+<!ELEMENT InitialConditions (Particle, Particle+)>
+<!ATTLIST Parameter name CDATA #REQUIRED
+                    value CDATA #REQUIRED>
+<!ATTLIST Particle id ID #REQUIRED
+                   mass CDATA #REQUIRED
+                   unit (g | kg) #REQUIRED
+                   x CDATA #REQUIRED
+                   y CDATA #REQUIRED
+                   z CDATA #REQUIRED
+                   velocity CDATA #REQUIRED>
